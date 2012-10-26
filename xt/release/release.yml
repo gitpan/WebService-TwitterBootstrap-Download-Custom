@@ -1,0 +1,14 @@
+---
+pod_spelling_system:
+  stopwords:
+    - img
+    - jQuery
+    - js
+    - plugins
+    - tooltip
+    - customizations
+
+pod_coverage:
+  private:
+    - WebService::TwitterBootstrap::Download::Custom::Zip#spew
+

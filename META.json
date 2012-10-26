@@ -1,0 +1,65 @@
+{
+   "abstract" : "Download a customized version of Twitter Bootstrap",
+   "author" : [
+      "Graham Ollis <plicease@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "WebService-TwitterBootstrap-Download-Custom",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Archive::Zip" : "0",
+            "DBD::SQLite" : "0",
+            "DBI" : "0",
+            "File::HomeDir" : "0",
+            "File::Temp" : "0",
+            "Mojo::DOM" : "0",
+            "Mojo::JSON" : "0",
+            "Mojo::UserAgent" : "0",
+            "Moose" : "0",
+            "Path::Class" : "0.26",
+            "Scalar::Util" : "0",
+            "perl" : "v5.10.0",
+            "strict" : "0",
+            "warnings" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::HomeDir::Test" : "0",
+            "FindBin" : "0",
+            "Mojo::Message::Response" : "0",
+            "Test::Differences" : "0",
+            "Test::More" : "0",
+            "YAML" : "0",
+            "base" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/WebService-TwitterBootstrap-Download-Custom/issues"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/WebService-TwitterBootstrap-Download-Custom.git",
+         "web" : "https://github.com/plicease/WebService-TwitterBootstrap-Download-Custom"
+      }
+   },
+   "version" : "0.01"
+}
+

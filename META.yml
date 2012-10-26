@@ -1,0 +1,40 @@
+---
+abstract: 'Download a customized version of Twitter Bootstrap'
+author:
+  - 'Graham Ollis <plicease@cpan.org>'
+build_requires:
+  File::HomeDir::Test: 0
+  FindBin: 0
+  Mojo::Message::Response: 0
+  Test::Differences: 0
+  Test::More: 0
+  YAML: 0
+  base: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: WebService-TwitterBootstrap-Download-Custom
+requires:
+  Archive::Zip: 0
+  DBD::SQLite: 0
+  DBI: 0
+  File::HomeDir: 0
+  File::Temp: 0
+  Mojo::DOM: 0
+  Mojo::JSON: 0
+  Mojo::UserAgent: 0
+  Moose: 0
+  Path::Class: 0.26
+  Scalar::Util: 0
+  perl: v5.10.0
+  strict: 0
+  warnings: 0
+resources:
+  bugtracker: https://github.com/plicease/WebService-TwitterBootstrap-Download-Custom/issues
+  repository: git://github.com/plicease/WebService-TwitterBootstrap-Download-Custom.git
+version: 0.01
