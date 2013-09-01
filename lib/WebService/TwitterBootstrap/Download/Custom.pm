@@ -16,7 +16,7 @@ use Moose;
 
 # TODO cache
 # ABSTRACT: Download a customized version of Twitter Bootstrap
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 has js => (
@@ -308,7 +308,7 @@ WebService::TwitterBootstrap::Download::Custom - Download a customized version o
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

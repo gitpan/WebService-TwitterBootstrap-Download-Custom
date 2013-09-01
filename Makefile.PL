@@ -34,7 +34,6 @@ my %WriteMakefileArgs = (
     "Scalar::Util" => 0
   },
   "TEST_REQUIRES" => {
-    "EV" => 0,
     "File::HomeDir::Test" => 0,
     "FindBin" => 0,
     "Mojo::Message::Response" => 0,
@@ -43,7 +42,7 @@ my %WriteMakefileArgs = (
     "YAML" => 0,
     "base" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }

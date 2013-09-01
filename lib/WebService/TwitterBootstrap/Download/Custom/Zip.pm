@@ -8,7 +8,7 @@ use Path::Class qw( dir );
 use Moose;
 
 # ABSTRACT: Zip file containing Twitter Bootstrap
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 has file => (
@@ -97,7 +97,7 @@ WebService::TwitterBootstrap::Download::Custom::Zip - Zip file containing Twitte
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 DESCRIPTION
 

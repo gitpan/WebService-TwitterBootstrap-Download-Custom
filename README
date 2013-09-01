@@ -3,7 +3,7 @@ NAME
     version of Twitter Bootstrap
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
      use WebService::TwitterBootstrap::Download::Custom;
