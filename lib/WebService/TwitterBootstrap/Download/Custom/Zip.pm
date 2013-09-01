@@ -8,7 +8,7 @@ use Path::Class qw( dir );
 use Moose;
 
 # ABSTRACT: Zip file containing Twitter Bootstrap
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 has file => (
@@ -97,7 +97,7 @@ WebService::TwitterBootstrap::Download::Custom::Zip - Zip file containing Twitte
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 
@@ -125,6 +125,8 @@ Extract all members of the zip to the given directory.
 
 This class uses L<Archive::Zip> internally, but that may
 change in the future so only use the documented methods.
+
+=cut
 
 =head1 AUTHOR
 

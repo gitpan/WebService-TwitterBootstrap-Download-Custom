@@ -4,7 +4,7 @@
       "Graham Ollis <plicease@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.132140",
    "license" : [
       "perl_5"
    ],
@@ -29,16 +29,16 @@
             "Mojo::DOM" : "0",
             "Mojo::JSON" : "0",
             "Mojo::UserAgent" : "0",
+            "Mojolicious" : "4.29",
             "Moose" : "0",
             "Path::Class" : "0.26",
             "Scalar::Util" : "0",
-            "perl" : "v5.10.0",
-            "strict" : "0",
-            "warnings" : "0"
+            "perl" : "v5.10.0"
          }
       },
       "test" : {
          "requires" : {
+            "EV" : "0",
             "File::HomeDir::Test" : "0",
             "FindBin" : "0",
             "Mojo::Message::Response" : "0",
@@ -52,14 +52,15 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/plicease/WebService-TwitterBootstrap-Download-Custom/issues"
+         "web" : "https://github.com/plicease/webservice-twitterbootstrap-download-custom/issues"
       },
+      "homepage" : "http://perl.wdlabs.com/WebService-TwitterBootstrap-Download-Custom/",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/plicease/WebService-TwitterBootstrap-Download-Custom.git",
-         "web" : "https://github.com/plicease/WebService-TwitterBootstrap-Download-Custom"
+         "url" : "git://github.com/plicease/webservice-twitterbootstrap-download-custom.git",
+         "web" : "https://github.com/plicease/webservice-twitterbootstrap-download-custom"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 

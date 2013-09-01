@@ -1,4 +1,8 @@
 Revision history for WebService-TwitterBootstrap-Download-Custom
 
+0.02      2013-09-01 08:08:48 -0400
+  - new URL
+  - mojo 4.x compat
+
 0.01      2012-10-26 10:47:49 America/New_York
   - initial version

@@ -16,7 +16,7 @@ use Moose;
 
 # TODO cache
 # ABSTRACT: Download a customized version of Twitter Bootstrap
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 has js => (
@@ -189,7 +189,7 @@ sub download
   {
     my $json = Mojo::JSON->new;
   
-    my $tx = $self->ua->post_form('http://bootstrap.herokuapp.com/', {
+    my $tx = $self->ua->post('http://bootstrap.herokuapp.com/' => form => {
       js   => $json->encode($self->js),
       css  => $json->encode($self->css),
       vars => $json->encode($self->vars),
@@ -243,7 +243,7 @@ sub fetch_defaults
   else
   {
     #my $tx = $self->ua->get("http://webcache.googleusercontent.com/search?q=cache:http://twitter.github.com/bootstrap/customize.html");
-    my $tx = $self->ua->get("http://twitter.github.com/bootstrap/customize.html");
+    my $tx = $self->ua->get("http://getbootstrap.com/2.3.2/customize.html");
   
     my $res = $tx->success;
     unless($res)
@@ -258,12 +258,10 @@ sub fetch_defaults
   $dom->find('label.checkbox')->each(sub {
     my($dom) = @_;
     my $label = $dom->text;
-    my $value = $dom->find('input')->first->attrs('value');
+    my $value = $dom->find('input')->first->attr('value');
     $self->labels->{$value} = $label;
-    given($value) {
-      when(/\.less$/) { push @{ $self->css }, $value }
-      when(/\.js$/)   { push @{ $self->js  }, $value }
-    }
+    push @{ $self->css }, $value if $value =~ /\.less$/;
+    push @{ $self->js  }, $value if $value =~ /\.js$/;
   });
   
   my $key;
@@ -281,7 +279,7 @@ sub fetch_defaults
     }
     else
     {
-      my $value = $dom->attrs('placeholder');
+      my $value = $dom->attr('placeholder');
       $self->vars->{$key} = $value;
       if($value =~ /\.png'$/)
       {
@@ -310,7 +308,7 @@ WebService::TwitterBootstrap::Download::Custom - Download a customized version o
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
